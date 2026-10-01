@@ -1,0 +1,23 @@
+import "./globals.css";
+import Navbar from "./Navbar";
+
+export const metadata = {
+  title: "My Portfolio",
+  description: "My personal portfolio website",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body>
+        <Navbar />
+        {children}
+        <footer>Made by Godwin S. Sabidor </footer>
+      </body>
+    </html>
+  );
+}
